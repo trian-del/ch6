@@ -13,8 +13,7 @@ public class Doubloon {
         for (int a = 0; a < s.length(); a++) {
             int count = 0;
             for (int b = 0; b < s.length(); b++) {
-                if (s.charAt(a) == b)
-                    count++;
+                if (s.charAt(a) == s.charAt(b)) count++;
             }
             if (count != 2) {
                 System.out.println(count);
